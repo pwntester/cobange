@@ -25,7 +25,8 @@ Color: green			      #3AD900 ~
 Color: light_green			#88FF88 ~
 Color: purple			      #967EFB ~
 Color: darker_cobalt		#020511 ~
-Color: cobalt			      #17252c ~
+Color: cobalt			      #101a20 ~
+# 17252c ~
 Color: darker_blue			#0050A4 ~
 Color: dark_blue			  #0088FF ~
 Color: blue			        #00AAFF ~
@@ -74,9 +75,9 @@ Folded              light_grey          darker_grey         italic
 MatchParen          white               darker_blue 
 ModeMsg             none                none                
 MoreMsg             light_green         none
-NonText             white               none
+NonText             dark_grey           none
 EndOfBuffer         cobalt              darker_cobalt
-EndOfBufferNC       darkest_grey        cobalt 
+EndOfBufferNC       darker_cobalt       cobalt 
 PMenu               lightest_grey       darkest_grey
 PMenuSel            darkest_grey        yellow
 PmenuSbar           dark_grey           none
@@ -84,7 +85,7 @@ PmenuThumb          lightest_grey       none
 Question            green               none
 Search              white               dark_blue
 IncSearch           white               dark_blue
-SpecialKey          darker_grey         black
+SpecialKey          blue                none
 SpellBad            none                none                undercurl s=red
 SpellCap            none                none                undercurl s=blue
 SpellLocal          none                none                undercurl s=light_blue
@@ -96,7 +97,7 @@ Title               green               none
 WarningMsg          red                 none
 WildMenu            dirty_pink          darkest_grey
 Comment             dark_blue           none                italic
-Constant            dark_pink           none
+Constant            dirty_blue          none
 String              green               none
 Identifier          dark_orange         none
 Function            yellow              none
@@ -189,24 +190,39 @@ goDiagnosticError   ->                  SpellBad
 goDiagnosticWarning ->                  SpellRare
 
 # NVIM-LSP
-LspDiagnosticsError             red             none
-LspDiagnosticsWarning           yellow          none
-LspDiagnosticInformation        blue            none
-LspDiagnosticHint               blue            none
-LspDiagnosticsUnderline         none            none        undercurl       guisp=white
-LspDiagnosticsUnderlineError    none            none        undercurl       guisp=red
-LspDiagnosticsUnderlineWarning  none            none        undercurl       guisp=yellow
-LspDiagnosticsUnderlineInfo     none            none        undercurl       guisp=blue
-LspDiagnosticsUnderlineHint     none            none        undercurl       guisp=blue
-LspReferenceText                none            darker_grey bold,italic
-LspReferenceRead                none            darker_grey bold,italic
-LspReferenceWrite               none            darker_grey bold,italic
+LspDiagnosticsError                 red         none
+LspDiagnosticsWarning               yellow      none
+LspDiagnosticsInformation           blue        none
+LspDiagnosticsHint                  blue        none
+LspDiagnosticsUnderline             none        none        undercurl       guisp=white
+LspDiagnosticsUnderlineError        none        none        undercurl       guisp=red
+LspDiagnosticsUnderlineWarning      none        none        undercurl       guisp=yellow
+LspDiagnosticsUnderlineInformation  none        none        undercurl       guisp=blue
+LspDiagnosticsUnderlineHint         none        none        undercurl       guisp=blue
+LspReferenceText                    none        darker_grey bold,italic
+LspReferenceRead                    none        darker_grey bold,italic
+LspReferenceWrite                   none        darker_grey bold,italic
 
 # VIM-BUFTABLINE
 BufTabLineCurrent   ->                  TabLineSel
 BufTabLineActive    ->                  TabLine
 BufTabLineHidden    ->                  TabLine
 BufTabLineFill      ->                  TabLineFill
+
+# STATUSLINE
+MyStatuslineSeparator    						darker_cobalt 		darker_cobalt  
+MyStatuslineBar          						darker_cobalt 		darker_cobalt 
+MyStatuslineGit          						light_grey 				darker_cobalt
+MyStatuslineFiletype     						dirty_blue 				darker_cobalt
+MyStatuslinePercentage   						dirty_blue 				darker_cobalt
+MyStatuslineLineCol      						dirty_blue 				darker_cobalt   
+MyStatuslineLSPErrors    						red 						  darker_cobalt
+MyStatuslineLSPWarnings  						dark_orange 			darker_cobalt
+MyStatuslineLSP          						dirty_blue 				darker_cobalt
+MyStatuslineBarNC        						darker_cobalt 		cobalt
+
+# MARKDOWN
+mkdLineBreak                        none               none
 
 # }}}
 
