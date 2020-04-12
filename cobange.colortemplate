@@ -21,12 +21,13 @@ Color: white			      #FFFFFF ~
 Color: dark_orange			#FF9A00 ~
 Color: yellow			      #FFC600 ~
 Color: light_yellow			#F2ED7F ~
-Color: green			      #3AD900 ~
-Color: light_green			#88FF88 ~
+Color: green			      #88FF88 ~ 
+# 3AD900 ~
+Color: light_green			#99c794 ~
+# 88FF88 ~
 Color: purple			      #967EFB ~
-Color: darker_cobalt		#020511 ~
+Color: darker_cobalt		#1b2b34 ~ 
 Color: cobalt			      #101a20 ~
-# 17252c ~
 Color: darker_blue			#0050A4 ~
 Color: dark_blue			  #0088FF ~
 Color: blue			        #00AAFF ~
@@ -38,6 +39,7 @@ Color: dark_pink			  #FF628C ~
 Color: dirty_pink			  #EB939A ~
 # }}}
 
+# 020511
 # Terminal colors {{{
 Term Colors: darker_cobalt dark_red green yellow darker_blue purple light_blue lightest_grey
 Term Colors: dark_grey red light_green light_yellow dark_blue dark_pink dirty_blue white
