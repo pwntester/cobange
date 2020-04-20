@@ -22,12 +22,10 @@ Color: dark_orange			#FF9A00 ~
 Color: yellow			      #FFC600 ~
 Color: light_yellow			#F2ED7F ~
 Color: green			      #88FF88 ~ 
-# 3AD900 ~
 Color: light_green			#99c794 ~
-# 88FF88 ~
-Color: purple			      #967EFB ~
-Color: darker_cobalt		#1b2b34 ~ 
-Color: cobalt			      #101a20 ~
+Color: cobalt1			    #101a20 ~
+Color: cobalt2		      #17252c ~ 
+Color: cobalt3		      #1b2b34 ~ 
 Color: darker_blue			#0050A4 ~
 Color: dark_blue			  #0088FF ~
 Color: blue			        #00AAFF ~
@@ -39,9 +37,8 @@ Color: dark_pink			  #FF628C ~
 Color: dirty_pink			  #EB939A ~
 # }}}
 
-# 020511
 # Terminal colors {{{
-Term Colors: darker_cobalt dark_red green yellow darker_blue purple light_blue lightest_grey
+Term Colors: cobalt1 dark_red green yellow darker_blue blue light_blue lightest_grey
 Term Colors: dark_grey red light_green light_yellow dark_blue dark_pink dirty_blue white
 # }}}
 
@@ -72,14 +69,14 @@ StatusLineNC      -> NormalNC
 # Default highlight groups {{{
 Directory           dirty_blue          none
 ErrorMsg            none                dark_red 
-VertSplit           cobalt              darker_cobalt
+VertSplit           cobalt3             cobalt1
 Folded              light_grey          darker_grey         italic
 MatchParen          white               darker_blue 
 ModeMsg             none                none                
 MoreMsg             light_green         none
 NonText             dark_grey           none
-EndOfBuffer         cobalt              darker_cobalt
-EndOfBufferNC       darker_cobalt       cobalt 
+EndOfBuffer         cobalt2             cobalt1
+EndOfBufferNC       cobalt2             cobalt3 
 PMenu               lightest_grey       darkest_grey
 PMenuSel            darkest_grey        yellow
 PmenuSbar           dark_grey           none
@@ -91,7 +88,7 @@ SpecialKey          blue                none
 SpellBad            none                none                undercurl s=red
 SpellCap            none                none                undercurl s=blue
 SpellLocal          none                none                undercurl s=light_blue
-SpellRare           none                none                undercurl s=purple
+SpellRare           none                none                undercurl s=blue
 TabLine             lightest_grey       black
 TabLineFill         lightest_grey       black
 TabLineSel          darker_blue         blue
@@ -115,15 +112,15 @@ Underlined          dirty_blue          none                underline
 Ignore              omit                omit
 Error               none                dark_red            italic
 Todo                none                dark_blue           italic
-ColorColumn         none                darker_cobalt
+ColorColumn         none                cobalt1
 Conceal             omit                omit 
-Normal              white               darker_cobalt
-NormalNC            white               cobalt
-NormalFloat         white               cobalt
+Normal              white               cobalt1
+NormalNC            white               cobalt3
+NormalFloat         white               cobalt3
 Cursor              none                darkest_grey
 CursorIM            omit                omit
 CursorColumn        none                darkest_grey
-CursorLine          none                cobalt
+CursorLine          none                cobalt3
 CursorLineNr        yellow              none
 FoldColumn          dark_grey           none
 SignColumn          dark_grey           none
@@ -173,15 +170,6 @@ deniteMatchedChar   blue                none
 DiffAdded           black               green
 DiffRemoved         white               red
 
-# NERDTREE
-NERDTreeHelp        darker_blue         none
-NERDTreeUp          darker_blue         none
-NERDTreeOpenable    yellow              none
-NERDTreeClosable    red                 none
-NERDTreeDir         yellow              none
-NERDTreeDirSlash    black               none
-NERDTreeExecFile    purple              none
-
 # DIRVISH
 DirvishPathTail     ->                  Comment
 DirvishPathHead     ->                  Function
@@ -206,25 +194,30 @@ LspReferenceRead                    none        darker_grey bold,italic
 LspReferenceWrite                   none        darker_grey bold,italic
 
 # VIM-BUFTABLINE
-BufTabLineCurrent   ->                  TabLineSel
-BufTabLineActive    ->                  TabLine
-BufTabLineHidden    ->                  TabLine
-BufTabLineFill      ->                  TabLineFill
+BufTabLineCurrent   ->              TabLineSel
+BufTabLineActive    ->              TabLine
+BufTabLineHidden    ->              TabLine
+BufTabLineFill      ->              TabLineFill
 
 # STATUSLINE
-MyStatuslineSeparator    						darker_cobalt 		darker_cobalt  
-MyStatuslineBar          						darker_cobalt 		darker_cobalt 
-MyStatuslineGit          						light_grey 				darker_cobalt
-MyStatuslineFiletype     						dirty_blue 				darker_cobalt
-MyStatuslinePercentage   						dirty_blue 				darker_cobalt
-MyStatuslineLineCol      						dirty_blue 				darker_cobalt   
-MyStatuslineLSPErrors    						red 						  darker_cobalt
-MyStatuslineLSPWarnings  						dark_orange 			darker_cobalt
-MyStatuslineLSP          						dirty_blue 				darker_cobalt
-MyStatuslineBarNC        						darker_cobalt 		cobalt
+MyStatuslineSeparator    						cobalt1 		cobalt1  
+MyStatuslineBar          						cobalt1 		cobalt1 
+MyStatuslineGit          						light_grey 	cobalt1
+MyStatuslineFiletype     						dirty_blue 	cobalt1
+MyStatuslinePercentage   						dirty_blue 	cobalt1
+MyStatuslineLineCol      						dirty_blue 	cobalt1   
+MyStatuslineLSPErrors    						red 				cobalt1
+MyStatuslineLSPWarnings  						dark_orange cobalt1
+MyStatuslineLSP          						dirty_blue 	cobalt1
+MyStatuslineBarNC        						cobalt1 		cobalt3
 
 # MARKDOWN
-mkdLineBreak                        none               none
+mkdLineBreak                        none        none
+mkdCode                             green       cobalt3
+
+# FLOATING WINDOWS
+PopupWindowBorder                   cobalt3     cobalt1
+InvertedPopupWindowBorder           cobalt1     cobalt3
 
 # }}}
 
