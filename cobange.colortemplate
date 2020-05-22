@@ -120,7 +120,7 @@ NormalFloat         white               cobalt3
 Cursor              none                darkest_grey
 CursorIM            omit                omit
 CursorColumn        none                darkest_grey
-CursorLine          none                cobalt3
+CursorLine          none                cobalt2
 CursorLineNr        yellow              none
 FoldColumn          dark_grey           none
 SignColumn          dark_grey           none
@@ -171,8 +171,8 @@ DiffAdded           black               green
 DiffRemoved         white               red
 
 # DIRVISH
-DirvishPathTail     ->                  Comment
-DirvishPathHead     ->                  Function
+DirvishPathTail     ->                  Function 
+DirvishPathHead     ->                  Comment
 DirvishSuffix       ->                  Identifier
 
 # VIM-GO
